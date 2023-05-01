@@ -11,17 +11,17 @@ template <typename T>
 class stack {
     private:
         const int MAX_SIZE = 20;
-        T* data;    // Dynamic array to hold the stack elements
+        T* data;    // Pointer to an array of T
         int size;   // Current size of the stack
 
     public:
-        // Constructor - initializes an empty stack
+        // Constructor
         stack() {
             size = 0;
             data = new T[size];
         }
 
-        // Destructor - frees the memory allocated for the stack
+        // Destructor
         ~stack() {
             while (!empty()) {
                 pop();
