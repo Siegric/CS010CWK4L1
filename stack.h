@@ -30,7 +30,7 @@ class stack {
         }
 
         // Pushes a value onto the top of the stack
-        void push(T val) {
+        void push(T& val) {
             // Check if the stack is already full
             if (size == MAX_SIZE) {
                 throw overflow_error("Called push on full stack.");
