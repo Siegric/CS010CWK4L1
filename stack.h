@@ -13,6 +13,7 @@ class stack {
         const int MAX_SIZE = 20;
         T* data;    // Pointer to an array of T
         int size;   // Current size of the stack
+        stack& operator=(const stack& rhs); // Assignment operator
 
     public:
         // Constructor
